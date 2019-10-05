@@ -80,9 +80,9 @@ public class SokobanNode {
 
 		// place sokoban
 		if (puzzle[sokobanPos.y][sokobanPos.x] == SokobanPuzzle.BOX) {
+			SokobanPuzzle.removeBoxAt(sokobanPos, puzzle);
 			boxes.remove(sokobanPos);
 			pending--;
-			SokobanPuzzle.removeBoxAt(sokobanPos, puzzle);
 			SokobanPuzzle.placeSokoban(sokobanPos, puzzle);
 			Point newLoc = d.move(sokobanPos);
 			SokobanPuzzle.addBoxAt(newLoc, puzzle);
@@ -91,8 +91,6 @@ public class SokobanNode {
 				pending++;
 			}
 		} else if (puzzle[sokobanPos.y][sokobanPos.x] == SokobanPuzzle.TARGET_BOX) {
-			boxes.remove(sokobanPos);
-			pending--;
 			SokobanPuzzle.removeBoxAt(sokobanPos, puzzle);
 			SokobanPuzzle.placeSokoban(sokobanPos, puzzle);
 			Point newLoc = d.move(sokobanPos);
@@ -134,7 +132,7 @@ public class SokobanNode {
 		return direction;
 	}
 
-	public boolean containsBlocked() {
+	public boolean containsBlockedBox() {
 		for (Point b : boxes) {
 			boolean[] walls = { false, false, false, false };
 			int iterator = 0;
@@ -153,7 +151,7 @@ public class SokobanNode {
 
 	@Override
 	public int hashCode() {
-		return (boxes.toString() + sokobanPos.x + sokobanPos.y).hashCode();
+		return (boxes.toString() + sokobanPos.toString()).hashCode();
 	}
 
 	@Override
@@ -198,7 +196,7 @@ public class SokobanNode {
 		SokobanNode source2 = new SokobanNode(sp);
 		System.out.println(source.equals(source2));
 		System.out.println("---------------------\n");
-		
+
 		SokobanNode node1 = new SokobanNode(new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/Example1.txt"));
 		SokobanPuzzle.printPuzzle(node1.getPuzzle());
 		node2 = new SokobanNode(new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/Example2.txt"));
@@ -206,6 +204,6 @@ public class SokobanNode {
 		System.out.println(node1.equals(node2));
 
 		node3 = new SokobanNode(new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/Example3.txt"));
-		System.out.println(node3.containsBlocked());
+		System.out.println(node3.containsBlockedBox());
 	}
 }

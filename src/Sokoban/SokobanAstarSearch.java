@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.InputMismatchException;
-import java.util.Iterator;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Set;
@@ -59,21 +58,25 @@ public class SokobanAstarSearch {
 					found = true;
 				}
 
-				//IF we already explored a node with the same UNTARGETED BOXES's STATE (number & locations)
-				//AND the f_score of the previously explored state is lower than the current one
-				//AND sokoban is at the SAME position
-				//THEN we know that the new state will never be as efficient as the previously explored one
+				// IF we already explored a node with the same UNTARGETED BOXES's STATE (number
+				// & locations)
+				// AND the f_score of the previously explored state is lower than the current
+				// one
+				// AND sokoban is at the SAME position
+				// THEN we know that the new state will never be as efficient as the previously
+				// explored one
 				boolean f = false;
-				Iterator<SokobanNode> iterator = explored.iterator();
-				while (iterator.hasNext()) {
-					SokobanNode node = iterator.next();
+				SokobanNode node = child.parent;
+				while (node!=null) {
 					if (node.equals(child) && node.f_score < child.f_score) {
 						f = true;
 					}
+					node=node.parent;
 				}
-				if (f || child.containsBlocked()) {
+				if (f)
 					continue;
-				}
+				if (child.containsBlockedBox())
+					continue;
 
 				queue.add(child);
 				if (DEBUG) {
