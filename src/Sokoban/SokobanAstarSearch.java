@@ -27,7 +27,6 @@ public class SokobanAstarSearch {
 	public void start() {
 		SokobanNode source = new SokobanNode(puzzle);
 
-		Set<SokobanNode> explored = new HashSet<SokobanNode>();
 		PriorityQueue<SokobanNode> queue = new PriorityQueue<SokobanNode>(20, new SokobanNodeComparator());
 
 		// cost from start
@@ -44,8 +43,6 @@ public class SokobanAstarSearch {
 		while ((!queue.isEmpty()) && (!found)) {
 			// the node in having the lowest f_score value
 			SokobanNode current = queue.poll();
-
-			explored.add(current);
 
 			// check every child of current node
 			for (Direction d : Direction.values()) {
@@ -67,11 +64,11 @@ public class SokobanAstarSearch {
 				// explored one
 				boolean f = false;
 				SokobanNode node = child.parent;
-				while (node!=null) {
+				while (node != null) {
 					if (node.equals(child) && node.f_score < child.f_score) {
 						f = true;
 					}
-					node=node.parent;
+					node = node.parent;
 				}
 				if (f)
 					continue;

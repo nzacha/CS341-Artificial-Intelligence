@@ -150,11 +150,6 @@ public class SokobanNode {
 	}
 
 	@Override
-	public int hashCode() {
-		return (boxes.toString() + sokobanPos.toString()).hashCode();
-	}
-
-	@Override
 	public boolean equals(Object o) {
 		if (o == null)
 			return false;
