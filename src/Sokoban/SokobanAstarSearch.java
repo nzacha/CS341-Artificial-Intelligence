@@ -9,19 +9,23 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Set;
 
+import gui.Renderer;
+
 public class SokobanAstarSearch {
 	private static final int NO_HEURISTIC = 0;
 	private static final int HEURISTIC_1 = 1;
 	private static final int HEURISTIC_2 = 2;
-	private static final boolean DEBUG = false, PRINT_PATH = false;
+	private static final boolean DEBUG = false, PRINT_PATH = true;
 	private static int method = 1;
 
 	private SokobanPuzzle puzzle;
 	private SokobanNode solution;
+	private Renderer renderer;
 
-	public SokobanAstarSearch(SokobanPuzzle instance, int method) {
+	public SokobanAstarSearch(SokobanPuzzle instance) {
 		this.puzzle = instance;
-		SokobanAstarSearch.method = method;
+		if (PRINT_PATH)
+			renderer = new Renderer(instance);
 	}
 
 	public void start() {
@@ -43,7 +47,6 @@ public class SokobanAstarSearch {
 		while ((!queue.isEmpty()) && (!found)) {
 			// the node in having the lowest f_score value
 			SokobanNode current = queue.poll();
-
 			// check every child of current node
 			for (Direction d : Direction.values()) {
 				if (!d.canMove(current.getPuzzle(), current.getSokobanPos()))
@@ -170,10 +173,12 @@ public class SokobanAstarSearch {
 		Collections.reverse(path);
 
 		System.out.println("The solution is:");
-		if (PRINT_PATH)
+		if (PRINT_PATH && solution != null) {
+			renderer.setVisible(true);
 			for (int i = 0; i < path.size(); i++) {
 				SokobanPuzzle.printPuzzle(path.get(i).getPuzzle());
-			}
+				renderer.update(path.get(i));
+			}}
 
 		System.out.print("Path:");
 		for (int i = 0; i < path.size(); i++) {
@@ -188,30 +193,39 @@ public class SokobanAstarSearch {
 	}
 
 	public static void main(String[] args) {
-		SokobanPuzzle puzzle = new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/SOK_HARD1.txt");
+		SokobanPuzzle puzzle = new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/MyTest1.txt");
 
-		SokobanAstarSearch search = new SokobanAstarSearch(puzzle, SokobanAstarSearch.NO_HEURISTIC);
-		System.out.println("Running with no heuristic");
-		long start = System.nanoTime();
-		search.start();
-		long end = System.nanoTime();
-		search.printPath();
-		System.out.printf("Total run time: %.3f ms.\n", (double) (end - start) / 1000000);
-
-		search = new SokobanAstarSearch(puzzle, SokobanAstarSearch.HEURISTIC_1);
-		System.out.println("\nRunning with heuristic 1");
-		start = System.nanoTime();
-		search.start();
-		end = System.nanoTime();
-		search.printPath();
-		System.out.printf("Total run time: %.3f ms.\n", (double) (end - start) / 1000000);
-
-		search = new SokobanAstarSearch(puzzle, SokobanAstarSearch.HEURISTIC_2);
-		System.out.println("\nRunning with heuristic 2");
-		start = System.nanoTime();
-		search.start();
-		end = System.nanoTime();
-		search.printPath();
-		System.out.printf("Total run time: %.3f ms.\n", (double) (end - start) / 1000000);
+		method = SokobanAstarSearch.HEURISTIC_2;
+		switch (method) {
+		case SokobanAstarSearch.NO_HEURISTIC:
+			SokobanAstarSearch search = new SokobanAstarSearch(puzzle);
+			System.out.println("Running with no heuristic");
+			long start = System.nanoTime();
+			search.start();
+			long end = System.nanoTime();
+			search.printPath();
+			System.out.printf("Total run time: %.3f ms.\n", (double) (end - start) / 1000000);
+			break;
+		case SokobanAstarSearch.HEURISTIC_1:
+			search = new SokobanAstarSearch(puzzle);
+			System.out.println("\nRunning with heuristic 1");
+			start = System.nanoTime();
+			search.start();
+			end = System.nanoTime();
+			search.printPath();
+			System.out.printf("Total run time: %.3f ms.\n", (double) (end - start) / 1000000);
+			break;
+		case SokobanAstarSearch.HEURISTIC_2:
+			search = new SokobanAstarSearch(puzzle);
+			System.out.println("\nRunning with heuristic 2");
+			start = System.nanoTime();
+			search.start();
+			end = System.nanoTime();
+			search.printPath();
+			System.out.printf("Total run time: %.3f ms.\n", (double) (end - start) / 1000000);
+			break;
+		default:
+			throw new InputMismatchException();
+		}
 	}
 }

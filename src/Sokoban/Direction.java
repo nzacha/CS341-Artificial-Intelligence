@@ -61,7 +61,7 @@ public enum Direction {
 		System.out.println(pos);
 
 		System.out.println("\nTest 2\n");
-		SokobanPuzzle sp = new SokobanPuzzle("input.txt");
+		SokobanPuzzle sp = new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/input.txt");
 
 		SokobanNode node = new SokobanNode(sp);
 		char[][] puzzle = node.getPuzzle();
@@ -71,16 +71,5 @@ public enum Direction {
 		puzzle = newNode.getPuzzle();
 		SokobanPuzzle.printPuzzle(puzzle);
 		System.out.println("----------------------\n");
-
-		sp = new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/SOK_EASY3.txt");
-
-		node = new SokobanNode(sp);
-		SokobanPuzzle.printPuzzle(node.getPuzzle());
-
-		System.out.println(Direction.LEFT.canMove(node.getPuzzle(), node.getSokobanPos()));
-		System.out.println();
-
-		newNode = new SokobanNode(node, Direction.LEFT);
-		SokobanPuzzle.printPuzzle(newNode.getPuzzle());
 	}
 }

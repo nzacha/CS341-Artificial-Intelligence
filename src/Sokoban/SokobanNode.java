@@ -25,12 +25,10 @@ public class SokobanNode {
 	private Direction direction = null;
 
 	public SokobanNode(SokobanPuzzle sokobanPuzzle) {
-		char[][] prevPuzzle = sokobanPuzzle.getPuzzle();
-		this.puzzle = new char[prevPuzzle.length][prevPuzzle[0].length];
-		for (int y = 0; y < prevPuzzle.length; y++) {
-			for (int x = 0; x < prevPuzzle[0].length; x++) {
-				this.puzzle[y][x] = prevPuzzle[y][x];
-				switch (prevPuzzle[y][x]) {
+		this.puzzle = sokobanPuzzle.getPuzzle();
+		for (int y = 0; y < puzzle.length; y++) {
+			for (int x = 0; x < puzzle[0].length; x++) {
+				switch (puzzle[y][x]) {
 				case SokobanPuzzle.BOX:
 					pending++;
 					boxes.add(new Point(x, y));
