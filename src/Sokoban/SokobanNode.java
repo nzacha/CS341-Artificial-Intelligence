@@ -23,6 +23,7 @@ public class SokobanNode {
 	private Point sokobanPos;
 	private int pending = 0;
 	private Direction direction = null;
+	private int branchID = 1;
 
 	public SokobanNode(SokobanPuzzle sokobanPuzzle) {
 		this.puzzle = sokobanPuzzle.getPuzzle();
@@ -124,6 +125,14 @@ public class SokobanNode {
 
 	public int getPending() {
 		return pending;
+	}
+
+	public void setBranchID(int newBranchID) {
+		this.branchID = newBranchID;
+	}
+
+	public int getBranchID() {
+		return branchID;
 	}
 
 	public Direction getDirection() {

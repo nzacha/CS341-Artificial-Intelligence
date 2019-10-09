@@ -15,7 +15,8 @@ import Sokoban.SokobanPuzzle;
 public class Renderer extends JPanel {
 	private Dimension windowSize;
 	private SokobanNode node;
-	private int inset = 50, FPS = 10, FPS_INV, size = 50;
+	private int branchID;
+	private int inset = 50, FPS = 30, FRAME_TIME, size = 50;
 	private JFrame frame;
 	private int lengthy, lengthx;
 
@@ -24,7 +25,12 @@ public class Renderer extends JPanel {
 		lengthx = sp.getPuzzle()[0].length;
 		windowSize = new Dimension(size * lengthx + inset * 2, size * lengthy + inset * 2);
 
-		FPS_INV = 1000 / FPS;
+		if (FPS < 1 || FPS > 30) {
+			System.out.println("FPS value is too low/high, it will be set automatically");
+			FRAME_TIME = 100;
+		} else {
+			FRAME_TIME = 1000 / FPS;
+		}
 
 		frame = new JFrame("Sokoban A* puzzle");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -36,16 +42,14 @@ public class Renderer extends JPanel {
 		frame.add(this);
 	}
 
-	@Override
-	public void setVisible(boolean visible) {
-		frame.setVisible(true);
-	}
-
-	public void update(SokobanNode node) {
+	public void update(SokobanNode node, int branchID) {
 		this.node = node;
+		this.branchID = branchID;
+		if (!frame.isVisible())
+			frame.setVisible(true);
 		repaint();
 		try {
-			Thread.sleep(FPS_INV);
+			Thread.sleep(FRAME_TIME);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -54,6 +58,8 @@ public class Renderer extends JPanel {
 	@Override
 	protected void paintComponent(Graphics g) {
 		g.clearRect(0, 0, windowSize.width, windowSize.height);
+		g.drawString("Branch ID: " + branchID, 5, 25);
+
 		if (node == null) {
 			return;
 		}
@@ -79,19 +85,22 @@ public class Renderer extends JPanel {
 					g.setColor(Color.RED);
 					break;
 				case SokobanPuzzle.TARGET_SOKOBAN:
+					g.setColor(Color.RED);
+					g.fillRect(inset + size * x, inset + size * y, size, size);
 					g.setColor(Color.CYAN);
 					g.fillOval(inset + size * x + 5, inset + size * y + 5, size - 10, size - 10);
-					g.setColor(Color.RED);
 					break;
 				case SokobanPuzzle.TARGET_BOX:
 					g.setColor(Color.ORANGE);
 					break;
 				}
-				if (node.getPuzzle()[y][x] != SokobanPuzzle.SOKOBAN) {
+				if (node.getPuzzle()[y][x] != SokobanPuzzle.SOKOBAN
+						&& node.getPuzzle()[y][x] != SokobanPuzzle.TARGET_SOKOBAN) {
 					g.fillRect(inset + size * x, inset + size * y, size, size);
 				}
 				g.setColor(Color.BLACK);
 				g.drawRect(inset + size * x, inset + size * y, size, size);
+				g.drawString(String.format("(%d,%d)", x, y), inset + size * x + 5, inset + size * (y + 1) - 5);
 			}
 		}
 	}

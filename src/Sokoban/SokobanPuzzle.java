@@ -94,8 +94,8 @@ public class SokobanPuzzle {
 			}
 		} catch (IOException ioe) {
 			System.out.println(ioe.getMessage());
-		} catch (NumberFormatException nfe) {
-			System.out.println(nfe.getMessage());
+			ioe.printStackTrace();
+			System.exit(0);
 		}
 
 		int size = 0;
