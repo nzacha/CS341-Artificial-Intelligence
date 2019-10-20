@@ -217,7 +217,7 @@ public class SokobanAstarSearch {
 				System.out.println("Unkown argument [" + arg + "]");
 			}
 		}
-		SokobanPuzzle puzzle = new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/" + fileName);
+		SokobanPuzzle puzzle = new SokobanPuzzle(fileName);
 
 		if (method == 0)
 			System.out.println("Running with no heuristic");
