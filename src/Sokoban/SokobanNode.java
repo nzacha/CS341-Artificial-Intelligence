@@ -25,9 +25,6 @@ public class SokobanNode {
 	private Direction direction = null;
 	private int branchID = 1;
 
-	/*
-	 * A Sokoban Node created using a Puzzle (The source node)
-	 */
 	public SokobanNode(SokobanPuzzle sokobanPuzzle) {
 		this.puzzle = sokobanPuzzle.getPuzzle();
 		for (int y = 0; y < puzzle.length; y++) {
@@ -52,9 +49,6 @@ public class SokobanNode {
 		h_score = SokobanAstarSearch.findHeuristic(boxes, targets, sokobanPos);
 	}
 
-	/*
-	 * A node created by moving sokoban in direction d, from another Node node
-	 */
 	public SokobanNode(SokobanNode node, Direction d) {
 		char[][] prevPuzzle = node.getPuzzle();
 		this.puzzle = new char[prevPuzzle.length][prevPuzzle[0].length];
@@ -145,9 +139,6 @@ public class SokobanNode {
 		return direction;
 	}
 
-	/*
-	 * Returns true if a box that forms a deadlock exists in the puzzle
-	 */
 	public boolean containsBlockedBox() {
 		for (Point b : boxes) {
 			boolean[] walls = { false, false, false, false };
@@ -165,10 +156,6 @@ public class SokobanNode {
 		return false;
 	}
 
-	/*
-	 * returns true if the object o is a SokobanNode that has the same boxes list
-	 * (Same number of boxes and same locations) AND Sokoban is at the same location 
-	 */
 	@Override
 	public boolean equals(Object o) {
 		if (o == null)

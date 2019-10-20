@@ -17,9 +17,6 @@ public class SokobanPuzzle {
 	public static final char TARGET_SOKOBAN = '+';
 	private static boolean DEBUG = false;
 
-	/*
-	 * Removes a box from a target location on a given puzzle
-	 */
 	public static void removeBoxAt(Point location, char[][] puzzle) {
 		switch (puzzle[location.y][location.x]) {
 		case BOX:
@@ -34,9 +31,6 @@ public class SokobanPuzzle {
 		}
 	}
 
-	/*
-	 * Adds a box to a target location on a given puzzle
-	 */
 	public static void addBoxAt(Point location, char[][] puzzle) {
 		switch (puzzle[location.y][location.x]) {
 		case EMPTY:
@@ -51,9 +45,6 @@ public class SokobanPuzzle {
 		}
 	}
 
-	/*
-	 * Places Sokoban at target location in given puzzle
-	 */
 	public static void placeSokoban(Point location, char[][] puzzle) {
 		switch (puzzle[location.y][location.x]) {
 		case EMPTY:
@@ -68,9 +59,6 @@ public class SokobanPuzzle {
 		}
 	}
 
-	/*
-	 * Prints puzzle in console
-	 */
 	public static void printPuzzle(char[][] puzzle) {
 		for (int i = 0; i < puzzle.length; i++) {
 			for (int j = 0; j < puzzle[0].length; j++)
@@ -89,9 +77,6 @@ public class SokobanPuzzle {
 			printPuzzle(puzzle);
 	}
 
-	/*
-	 * Reads puzzle from file
-	 */
 	private char[][] readFromFile(String fileName) {
 		FileReader fr;
 		BufferedReader br;

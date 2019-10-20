@@ -30,7 +30,6 @@ public class SokobanAstarSearch {
 			renderer = new Renderer(instance);
 	}
 
-	//The method that searches for the solution
 	public void start() {
 		SokobanNode source = new SokobanNode(puzzle);
 		PriorityQueue<SokobanNode> queue = new PriorityQueue<SokobanNode>(20, new SokobanNodeComparator());
@@ -105,7 +104,6 @@ public class SokobanAstarSearch {
 
 	}
 
-	//the method that chooses the heuristic 
 	public static int findHeuristic(Set<Point> boxes, Set<Point> targets, Point sokoban) {
 		switch (method) {
 		case NO_HEURISTIC:
@@ -119,7 +117,6 @@ public class SokobanAstarSearch {
 		}
 	}
 
-	//The method that calculates Heuristic 1
 	private static int findHeuristic_1(Set<Point> boxes, Set<Point> targets) {
 		Set<Point> availableTargets = new HashSet<Point>(targets);
 		int hSum = 0;
@@ -143,7 +140,6 @@ public class SokobanAstarSearch {
 		return hSum;
 	}
 
-	//The method that calculates Heuristic 2
 	private static int findHeuristic_2(Set<Point> boxes, Set<Point> targets, Point sokobanPos) {
 		int hSum = 0;
 		int dClosestBox = Integer.MAX_VALUE;
@@ -158,15 +154,10 @@ public class SokobanAstarSearch {
 		return hSum;
 	}
 
-	//returns the Manhattan distance between 2 points
 	private static int manhattanDistance(Point a, Point b) {
 		return Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
 	}
 
-	/* prints the path of a Node (using gui or in console)
-	 * pathTail - the end Node of the path
-	 * detailed - if true The path taken will be print
-	 */
 	public void printPath(SokobanNode pathTail, boolean detailed) {
 		if (pathTail == null) {
 			System.out.println("Path is empty");
@@ -226,7 +217,7 @@ public class SokobanAstarSearch {
 				System.out.println("Unkown argument [" + arg + "]");
 			}
 		}
-		SokobanPuzzle puzzle = new SokobanPuzzle(fileName);
+		SokobanPuzzle puzzle = new SokobanPuzzle("SOKOBAN_EXAMPLES_TESTSET/" + fileName);
 
 		if (method == 0)
 			System.out.println("Running with no heuristic");
