@@ -1,4 +1,4 @@
-package Sokoban;
+package hw1.Sokoban;
 
 import java.awt.Point;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-import gui.Renderer;
+import hw1.gui.Renderer;
 
 public class SokobanAstarSearch {
 	private static final int NO_HEURISTIC = 0;

@@ -1,0 +1,72 @@
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 5.105 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.589 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.675 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.429 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.411 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.552 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.704 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.374 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 5.402 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.509 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.552 ms.
+Total nodes created: 39
+Running with heuristic 2
+Path:
+	START: (2,3), RIGHT: (3,3), DOWN: (3,4), RIGHT: (4,4), DOWN: (4,5), LEFT: (3,5), LEFT: (2,5), 
+Total Steps: 6
+Total run time: 4.756 ms.
+Total nodes created: 39

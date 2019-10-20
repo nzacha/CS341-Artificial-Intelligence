@@ -1,0 +1,108 @@
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 14.668 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 15.274 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 15.327 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 14.939 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 15.030 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 16.955 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 15.128 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 15.712 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 16.080 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 16.960 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 16.988 ms.
+Total nodes created: 348
+Running with heuristic 1
+Path:
+	START: (1,2), UP: (1,1), RIGHT: (2,1), RIGHT: (3,1), DOWN: (3,2), UP: (3,1), LEFT: (2,1), LEFT: (1,1), DOWN: (1,2), RIGHT: (2,2), 
+	DOWN: (2,3), RIGHT: (3,3), LEFT: (2,3), UP: (2,2), UP: (2,1), RIGHT: (3,1), DOWN: (3,2), RIGHT: (4,2), DOWN: (4,3), DOWN: (4,4), 
+	LEFT: (3,4), UP: (3,3), RIGHT: (4,3), UP: (4,2), LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), UP: (2,2), RIGHT: (3,2), UP: (3,1), 
+	LEFT: (2,1), 
+Total Steps: 30
+Total run time: 16.390 ms.
+Total nodes created: 348

@@ -1,4 +1,4 @@
-package Sokoban;
+package hw1.Sokoban;
 
 import java.util.Comparator;
 

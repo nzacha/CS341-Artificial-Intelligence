@@ -1,0 +1,108 @@
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 109.061 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 105.370 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 108.773 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 107.978 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 120.745 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 110.116 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 115.576 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 106.934 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 110.509 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 109.629 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 114.059 ms.
+Total nodes created: 9457
+Running with heuristic 2
+Path:
+	START: (6,1), DOWN: (6,2), RIGHT: (7,2), DOWN: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+	DOWN: (5,4), DOWN: (5,5), RIGHT: (6,5), RIGHT: (7,5), UP: (7,4), UP: (7,3), LEFT: (6,3), UP: (6,2), LEFT: (5,2), LEFT: (4,2), 
+	LEFT: (3,2), DOWN: (3,3), LEFT: (2,3), LEFT: (1,3), UP: (1,2), RIGHT: (2,2), RIGHT: (3,2), RIGHT: (4,2), RIGHT: (5,2), DOWN: (5,3), 
+	RIGHT: (6,3), RIGHT: (7,3), DOWN: (7,4), DOWN: (7,5), LEFT: (6,5), LEFT: (5,5), UP: (5,4), UP: (5,3), 
+Total Steps: 37
+Total run time: 113.113 ms.
+Total nodes created: 9457

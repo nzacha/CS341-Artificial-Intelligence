@@ -1,4 +1,4 @@
-package gui;
+package hw1.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -9,8 +9,8 @@ import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import Sokoban.SokobanNode;
-import Sokoban.SokobanPuzzle;
+import hw1.Sokoban.SokobanNode;
+import hw1.Sokoban.SokobanPuzzle;
 
 public class Renderer extends JPanel {
 	private Dimension windowSize;
