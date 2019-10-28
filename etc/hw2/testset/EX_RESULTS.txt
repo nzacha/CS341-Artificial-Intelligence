@@ -1,0 +1,18 @@
+EX1.txt
+======================================================================
+The three (3) set that can be generated based on the matrix above are:
+Set 1 = { 1 }
+Set 2 = { 2, 5 }
+Set 3 = { 3, 4 }
+
+EX2.txt
+======================================================================
+The three (3) set that can be generated based on the matrix above are:
+Set 1 = { 1, 2 }
+Set 2 = { 3 }
+Set 3 = { 4 }
+
+
+EX3.txt
+======================================================================
+The given grpah cannot be divided into a total of three (3) sets
