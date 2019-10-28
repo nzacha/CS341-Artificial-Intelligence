@@ -216,7 +216,7 @@ public class Graph {
         count+=3;
         fline=fline+" "+count+"\n";
         try{
-            BufferedWriter bw=new BufferedWriter(new FileWriter("expr.cnf"));
+            BufferedWriter bw=new BufferedWriter(new FileWriter("etc/hw2/expr.cnf"));
             bw.write(fline);
             bw.write(sat);
             bw.close();
@@ -224,13 +224,14 @@ public class Graph {
             e.printStackTrace();
         }
         Runtime rt=Runtime.getRuntime();
-        String[] commands = {"/bin/sh","-c","/home/andreas/Downloads/lingeling_solver/lingeling expr.cnf | grep 'v 1 \\|v -1'"};
+        String[] commands = {"/bin/sh","-c","home/nzacha/IdeaProjects/CS341-Artificial-Intelligence/etc/hw2/lingeling_solver/lingeling ../expr.cnf | grep 'v 1 \\|v -1'"};
         Process proc = rt.exec(commands);
 
         BufferedReader stdInput = new BufferedReader(new
                 InputStreamReader(proc.getInputStream()));
         String s = stdInput.readLine();
         int lit[]=new int[literals];
+        System.out.println();
         if(s==null)
             System.out.print("The given graph cannot be devided into 3 sets");
         else{
